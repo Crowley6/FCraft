@@ -1,0 +1,270 @@
+.App {
+    width: 1920px;
+    min-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.AppHeader {
+    position: absolute;
+}
+
+.AppHeader-Menu {
+    display: flex;
+    width: 1630px;
+    height: 84px;
+    flex-shrink: 0;
+    margin-top: 68px;
+    margin: 83px 0 0 195px;
+    min-width: 1630px;
+}
+
+.AppHeader-Menu_Logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 171px;
+    height: 84px;
+    gap: 0 14px;
+}
+
+.AppHeader-Menu_LogoImg {
+    width: 86px;
+    height: 84px;
+}
+
+.AppHeader-Menu_LogoName {
+    width: 71px;
+    height: 54px;
+
+    color: #183851;
+    font-family: Aclonica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppHeader-Menu_Links {
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin: 0 0 0 220px;
+}
+
+.AppHeader-Menu_LinksMenu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.AppHeader-Menu_LinksMenu a {
+    text-decoration: none;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppHeader-Menu_LinksAuthorise {
+    width: 470px;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AppHeader-Menu_LinksAuthorise a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppHeader-Menu_LinksAuthorise_Reg {
+    width: 156.893px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #8CACC5;
+}
+
+.AppHeader-Menu_LinksAuthorise_Log {
+    width: 156.893px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #183851;
+}
+
+.AppHeader-Menu_LinksAuthorise_Logo {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #B1D1EA;
+    margin: 0 0 0 50px;
+    padding: 5px 3px 3px;
+}
+
+.AppMain {
+    min-height: 200px;
+}
+
+footer {
+    position: relative;
+    width: 1920px;
+    height: 842px;
+}
+
+.AppFooter-LeftSide {}
+
+.AppFooter-Container {
+    position: absolute;
+    top: 293px;
+    left: 193px;
+    display: flex;
+}
+
+.AppFooter-LeftSide_Review {
+    display: flex;
+    width: 490px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.AppFooter-LeftSide_Review h1 {
+    color: #183851;
+
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppFooter-LeftSide_Review input {
+    border-radius: 10px;
+    background: #183851;
+    width: 490px;
+    height: 60px;
+    color: #FFF;
+
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppFooter-LeftSide_Review input[type='text'] {
+    background: #B1D1EA;
+}
+
+.AppFooter-LeftSide_Date {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 52px 0;
+}
+
+.AppFooter-RightSide {
+    margin: 0 350px;
+}
+
+.AppFooter-RightSide_Menu {
+    display: flex;
+    width: 135.98px;
+    height: 180px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.AppFooter-RightSide_Menu>ul>li {
+    margin: 24px 0;
+    padding: 2px 0;
+}
+
+.AppFooter-RightSide_Menu>ul>li>a {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppFooter-RightSide_Logo {
+    display: flex;
+    flex-direction: row;
+    padding: 128px 0 0 0;
+}
+
+.AppFooter-RightSide_LogoImg {
+    width: 52.214px;
+    height: 51px;
+    margin: 16px 0;
+}
+
+.AppFooter-RightSide_LogoName {
+    color: #183851;
+    font-family: Aclonica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppFooter-RightSide_Links {
+    display: flex;
+    gap: 32px;
+    margin: 20px 0 0 -60px;
+}
+
+.AppFooter-RightSide_Links :first-child {
+    margin: -5px 0 0px 0;
+}
+
+.AppFooter-RightSide_Firstpage {
+    position: absolute;
+    right: -160px;
+    bottom: 55px;
+}
+
+.foorterBack-WhiteMushroom {
+    position: absolute;
+    top: 174px;
+    left: 46px;
+    width: 102.494px;
+    height: 80.391px;
+}
+
+.foorterBack-Tomato {
+    position: absolute;
+    width: 143px;
+    height: 138px;
+    top: 110px;
+    left: 759px;
+}
+
+.foorterBack-Mushroom {
+    position: absolute;
+    width: 130px;
+    height: 123px;
+    top: 171px;
+    right: 202px;
+}

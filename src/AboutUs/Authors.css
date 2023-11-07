@@ -1,0 +1,76 @@
+.AppMain-Authors {}
+
+.AppMain-Authors>h1 {
+    padding: 48px 0;
+    text-align: center;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-AuthorsVerticalline {
+    display: flex;
+    justify-content: center;
+}
+
+.AppMain-AuthorsAbout {
+    position: absolute;
+    top: 480px;
+    height: 1000px;
+    width: 1920px;
+}
+
+.AppMain-AuthorsAboutIn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AppMain-AuthorsAboutThis {
+    display: flex;
+    width: 1260px;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 190px 0 0 0;
+    flex-shrink: 0;
+}
+
+.AppMain-AuthorsAboutThis_Data {
+    width: 740px;
+}
+.AppMain-AuthorsAboutThis_Data2{
+    text-align: right;
+}
+
+.AppMain-AuthorsAboutThis_Data h1 {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-AuthorsAboutThis_Data h3 {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-AuthorsAboutThis_Data p {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

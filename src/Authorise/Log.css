@@ -1,0 +1,99 @@
+.AppMain-Log{
+    position: relative;
+}
+.AppMain-LogBox {
+    position: absolute;
+    top: 133px;
+    left: 660px;
+    width: 600px;
+    height: 797px;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.AppMain-LogBox h1 {
+    position: absolute;
+    top: 35px;
+    left: 131px;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-LogBox h2 {
+    position: absolute;
+    top: 105px;
+    left: 274px;
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-LogBox_Btns {
+    position: absolute;
+    top: 180px;
+    left: 54px;
+    width: 490px;
+}
+
+.LineForAuth {
+    width: 489px;
+    height: 1px;
+    background: #183851;
+    margin: 19px 0 15px 0;
+}
+
+.AppMain-LogBox_Btns button {
+    width: 490px;
+    height: 60px;
+    border-radius: 10px;
+    background: #B1D1EA;
+    margin: 10px 0 0 0;
+    padding: 9px 0px 11px 32px;
+    text-align: left;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.AppMain-LogBox_Btns img {
+    padding: 0 17px 0 0;
+    width: 52px;
+}
+.AppMain-LogBox h3 {
+    position: absolute;
+    top: 561px;
+    left: 171px;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-LogBox_Reg {
+    position: absolute;
+    top: 638px;
+    left: 55px;
+    width: 490px;
+    height: 60px;
+    border-radius: 10px;
+    background: #183851;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

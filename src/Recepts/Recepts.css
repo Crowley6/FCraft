@@ -1,0 +1,366 @@
+
+.AppMain-ReceptsContainer {
+    width: 1530px;
+    margin: 0 auto;
+}
+
+.AppMain-ReceptsCategoryes {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto 0;
+}
+
+select {
+    width: 330px;
+    height: 56px;
+    border-radius: 10px;
+    background: #8CACC5;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 6px;
+    padding: 10px 20px;
+}
+
+.AppMain-ReceptsCategoryes_RightBtn1 {
+    width: 240px;
+    height: 56px;
+    border-radius: 10px;
+    background: #B1D1EA;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 6px;
+}
+
+.AppMain-ReceptsCategoryes_RightBtn2 {
+    width: 206px;
+    height: 56px;
+    border-radius: 10px;
+    background: #183851;
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 6px;
+}
+
+.Line {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.AppMain-ReceptsIngredients {}
+
+.AppMain-ReceptsIngredients h1 {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-ReceptsIngredientsIn {
+    display: flex;
+    gap: 30px;
+}
+
+.AppMain-ReceptsIngredientsIn_AddMenu {
+    width: 490px;
+    background-color: #B1D1EA;
+    padding: 16px 16px 32px 16px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.AppMain-ReceptsIngredientsIn_AddMenu div {
+    min-width: 103px;
+    height: 55px;
+    border-radius: 10px;
+    border: 3px solid #8CACC5;
+    margin: 0 16px 16px 0;
+    padding: 10px;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-ReceptsIngredientsIn_AddMenu button {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 12px;
+    left: 32px;
+}
+
+.AppMain-ReceptsIngredientsIn_RemoveMenu {
+    width: 487px;
+    background-color: #B1D1EA;
+    padding: 16px 16px 32px 16px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.AppMain-ReceptsIngredientsIn_RemoveMenu div {
+    min-width: 103px;
+    height: 55px;
+    border-radius: 10px;
+    border: 3px solid #8CACC5;
+    margin: 0 16px 16px 0;
+    padding: 10px;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-ReceptsIngredientsIn_RemoveMenu button {
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 12px;
+    left: 32px;
+}
+
+.AppMain-Recepts_IngredientsPopular {}
+
+.AppMain-Recepts_IngredientsPopular_List {
+    width: 1010px;
+    display: flex;
+    padding: 16px 0 53px 0;
+    gap: 30px;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListBtns {
+    display: inline-flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 677px;
+    height: 124px;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListBtns button {
+    min-width: 145px;
+    height: 56px;
+    border-radius: 10px;
+    border: 3px solid #8CACC5;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListBtns input {
+    min-width: 100px;
+    height: 56px;
+    border-radius: 10px;
+    border: 3px solid #8CACC5;
+    background-color: #8CACC5;
+
+    color: #FFF;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListHide {
+    width: 295px;
+    height: 56px;
+    padding: 0;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListHide1 {
+    width: 230px;
+    height: 56px;
+    border-radius: 10px;
+    background: #8CACC5;
+    border: 3px solid #8CACC5;
+    vertical-align: top;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsPopular_ListHide2 {
+    background-color: #183851;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    border: 3px solid #8CACC5;
+    padding: 16px;
+    margin: 0 0 0 9px;
+}
+
+.AppMain-Recepts_IngredientsSort {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 51px;
+}
+
+.AppMain-Recepts_IngredientsSort1 {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsSort2 {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsSort3 {
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView {
+    display: flex;
+    width: 1527px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 68px;
+    padding: 76px 0;
+}
+
+.AppMain-Recepts_IngredientsView_Object {
+    display: flex;
+    width: 1335px;
+    height: 500px;
+    align-items: center;
+    gap: 120px;
+}
+
+.AppMain-Recepts_IngredientsView_Object>img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectData {
+    width: 803px;
+    height: 357px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataHeader {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataHeader p {
+    color: #9B5B95;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataName {
+    display: flex;
+    height: 69px;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataVendor {
+    padding: 24px 0;
+
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 76px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataInfo_CountIngredients {
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataInfo_CountPortions {
+    display: flex;
+    align-items: center;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade {
+    display: flex;
+}
