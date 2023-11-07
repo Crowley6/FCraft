@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FoodCraftLogoForHeader from './AppPictures/FoodCraftLogoForHeader.png';
 import UserLogoForHeader from './AppPictures/UserLogoForHeader.png';
+import Arrow from './AppPictures/Back_Arrow.png';
 import Main from './Main/Main';
 import Authors from './AboutUs/Authors';
 import Recepts from './Recepts/Recepts';
@@ -24,7 +25,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="App">
-        <a href='/'><img src={}/></a>
+        <a className='Arroow_BackInMain' href='/'><img src={Arrow} width={'40px'}/></a>
         <header className="AppHeader">
           <div className='AppHeader-Menu'>
             <div className='AppHeader-Menu_Logo'>
