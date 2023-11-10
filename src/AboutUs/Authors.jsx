@@ -18,7 +18,7 @@ const AuthorsData2 = () => {
     return (
         <div className='AppMain-AuthorsAboutThis'>
             <div className='AppMain-AuthorsAboutThis_Data AppMain-AuthorsAboutThis_Data2'>
-                <h1>Махмудов Г.</h1>
+                <h1>Миронов Н.</h1>
                 <h3>IT-менеджер проекта</h3>
                 <p>Он контролирует и несет ответственность за все этапы жизненного цикла проекта.</p>
             </div>

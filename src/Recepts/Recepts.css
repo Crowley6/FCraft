@@ -1,4 +1,3 @@
-
 .AppMain-ReceptsContainer {
     width: 1530px;
     margin: 0 auto;
@@ -359,8 +358,66 @@ select {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    gap: 10px;
 }
+
+.AppMain-Recepts_IngredientsView_ObjectDataInfo_CountTime {
+    display: flex;
+    align-items: center;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+}
+
+/* -----------------------Данные об оценке----------------------- */
 
 .AppMain-Recepts_IngredientsView_ObjectDataGrade {
     display: flex;
+    margin: 35px 0 0 0;
+    gap: 50px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade_SubscribeRecepts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGrade {
+    display: flex;
+    gap: 20px;
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeSubscribes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeLikes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeDisikes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

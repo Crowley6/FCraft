@@ -22,7 +22,7 @@ let inintialState = {
     ],
 }
 
-let MainReducer = (state = inintialState, action) => {
+const MainReducer = (state = inintialState, action) => {
     return state;
 }
 export default MainReducer;

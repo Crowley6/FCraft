@@ -2,13 +2,14 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import FoodCraftLogoForHeader from './AppPictures/FoodCraftLogoForHeader.png';
 import UserLogoForHeader from './AppPictures/UserLogoForHeader.png';
-import Arrow from './AppPictures/Back_Arrow.png';
 import Main from './Main/Main';
 import Authors from './AboutUs/Authors';
 import Recepts from './Recepts/Recepts';
 import Reg from './Authorise/Reg';
 import Log from './Authorise/Log';
+import Why from './AppPictures/why.jpg'
 import React, { useState } from 'react';
+import AboutThisRecept from './AboutRecept/AboutThisRecept';
 
 
 const ScrollOnTop = () => {
@@ -25,7 +26,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="App">
-        <a className='Arroow_BackInMain' href='/'><img src={Arrow} width={'40px'}/></a>
+        <img src={Why} width={1920} className='why' />
         <header className="AppHeader">
           <div className='AppHeader-Menu'>
             <div className='AppHeader-Menu_Logo'>
@@ -49,10 +50,11 @@ function App(props) {
         <main className='AppMain' >
           <Routes>
             <Route path='/' element={<Main state={props.state.getState()} />} />
-            <Route path='/Recepts' element={<Recepts />} />
+            <Route path='/Recepts' element={<Recepts state={props.state.getState().ReceptsReducer} />} />
             <Route path='/Authors' element={<Authors />} />
             <Route path='/Reg' element={<Reg setDataHide={setDataHide} />} />
             <Route path='/Log' element={<Log setDataHide={setDataHide} />} />
+            <Route path='/AboutThisRecept' element={<AboutThisRecept state={props.state.getState().ReceptsReducer}/>} />
           </Routes>
 
         </main>

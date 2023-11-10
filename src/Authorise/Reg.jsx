@@ -2,6 +2,7 @@ import AuthBack from '../AppPictures/authorise.svg';
 import email from '../AppPictures/email.png';
 import google from '../AppPictures/google.png';
 import vk from '../AppPictures/vk.png';
+import Arrow from '../AppPictures/Back_Arrow.png';
 import './Reg.css'
 import { useEffect } from 'react';
 
@@ -13,6 +14,7 @@ const Reg = ({ setDataHide }) => {
         <div className='AppMain-Reg'>
             <img src={AuthBack} alt="" />
             <div className='AppMain-RegBox'>
+            <a className='Arrow_BackInMain' href='/'><img src={Arrow} width={'40px'} /></a>
                 <h1>Личные учетные записи</h1>
                 <h2>Как создать учетную запись?</h2>
                 <div className='AppMain-RegBox_Btns'>

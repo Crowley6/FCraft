@@ -1,13 +1,19 @@
+.why{
+    position: fixed;
+    z-index: -1;
+}
+
 .App {
     width: 1920px;
     min-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
 }
-.Arroow_BackInMain{
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
+
+.Arrow_BackInMain {
+    position: absolute;
+    top: 60px;
+    left: 55px;
     z-index: 99;
 }
 
