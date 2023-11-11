@@ -26,11 +26,11 @@ let initialState = {
                 bananaName: 'Бананы',
             },
             ingredients: {
-                milk: '1 л',
-                cocckEggs: '2 шт',
-                wheatFlour: '600 гр',
-                sugar: '3 ст.л',
-                banana: '4 шт',
+                milk: 1,
+                cocckEggs: 2,
+                wheatFlour: 600,
+                sugar: 3,
+                banana: 4,
             },
             instructions: [
                 'фывайцукацпыавпкуичвцумкцгинемгесзщкусирцпзуа',

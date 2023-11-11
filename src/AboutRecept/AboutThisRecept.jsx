@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import ImageBackForHeader from '../AppPictures/ImageBackForHeader.png';
 import './AboutThisRecept.css';
 
+
 const AboutThisRecept = (props) => {
     debugger
+    const [countPortion, setCountPortion] = useState(1);
     return (
         <div className='AboutThisRecept'>
             <img src={ImageBackForHeader} alt="" />
@@ -98,30 +100,30 @@ const AboutThisRecept = (props) => {
                     <div>
                         <div>
                             <p>{props.state.ReceptsData[0].ingredientsName.milkName}</p>
-                            <p>{props.state.ReceptsData[0].ingredients.milk}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.milk * countPortion} л</p>
                         </div>
                         <div>
                             <p>{props.state.ReceptsData[0].ingredientsName.cocckEggsName}</p>
-                            <p>{props.state.ReceptsData[0].ingredients.cocckEggs}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.cocckEggs * countPortion} шт</p>
                         </div>
                         <div>
                             <p>{props.state.ReceptsData[0].ingredientsName.wheatFlourName}</p>
-                            <p>{props.state.ReceptsData[0].ingredients.wheatFlour}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.wheatFlour * countPortion} гр</p>
                         </div>
                         <div>
                             <p>{props.state.ReceptsData[0].ingredientsName.sugarName}</p>
-                            <p>{props.state.ReceptsData[0].ingredients.sugar}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.sugar * countPortion} ст.л</p>
                         </div>
                         <div>
                             <p>{props.state.ReceptsData[0].ingredientsName.bananaName}</p>
-                            <p>{props.state.ReceptsData[0].ingredients.banana}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.banana * countPortion} шт</p>
                         </div>
                     </div>
 
                     <div className='AboutThisRecept-IngredientsInfo_Btns'>
-                        <button>-</button>
-                        <h1>1</h1>
-                        <button>+</button>
+                        <button onClick={() => setCountPortion(countPortion - 1)}> - </button>
+                        <h1>{countPortion}</h1>
+                        <button onClick={() => setCountPortion(countPortion + 1)}>+</button>
                     </div>
                     <p className='AboutThisRecept-IngredientsInfo_p'>порции</p>
                 </div>
