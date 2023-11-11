@@ -1,0 +1,171 @@
+.AboutThisRecept {
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AboutThisRecept-Category {}
+
+.AboutThisRecept-Vendor {
+    width: 1630px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.AboutThisRecept-Vendor_SecondDiv {
+    display: flex;
+    height: 24px;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.AboutThisRecept-DataInfo {
+    width: 1630px;
+    margin: 75px 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.AbooutThisRecept-Ingredients {
+    width: 1630px;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.AboutThisRecept-IngredientsImage {
+    border-radius: 20px;
+    width: 60%;
+    min-width: 40%;
+}
+
+.AboutThisRecept-IngredientsInfo {
+    width: 40%;
+    min-width: 400px;
+    margin: 0 0 0 165px;
+    border-radius: 20px;
+    background: #B1D1EA;
+    padding: 25px 47px 61px 48px;
+}
+
+.AboutThisRecept-IngredientsInfo h1 {
+    text-align: center;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AboutThisRecept-IngredientsInfo>div>div {
+    display: flex;
+    justify-content: space-between;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AboutThisRecept-IngredientsInfo_Btns {
+    display: flex;
+    justify-content: center;
+}
+
+.AboutThisRecept-IngredientsInfo_Btns h1 {
+    padding: 10px 31px 14px 31px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #000;
+    font-family: Alegreya;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AboutThisRecept-IngredientsInfo_Btns button {
+    width: 50px;
+    height: 50px;
+    color: #183851;
+    font-size: 42px;
+    transform: translateY(80%);
+}
+
+.AboutThisRecept-IngredientsInfo_p {
+    text-align: center;
+    color: #8CACC5;
+    font-family: Alegreya;
+    font-size: 20px;
+    padding: 0;
+    margin: -24px 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AboutThisRecept-Compound {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.AboutThisRecept-Compound h1 {
+    text-align: center;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.AboutThisRecept-Compound_Info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #183851;
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AboutThisRecept-Instruction {
+    margin: 111px 0 0 0;
+}
+
+.AboutThisRecept-Instruction h1 {
+    padding: 0 0 25px 0;
+    text-align: center;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AboutThisRecept-Instruction li {
+    width: 990px;
+    color: #183851;
+    font-family: Alegreya;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 28px 0;
+    padding: 0 20px;
+}

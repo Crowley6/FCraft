@@ -26,7 +26,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="App">
-        <img src={Why} width={1920} className='why' />
+        {/* <img src={Why} width={1920} height={1080} className='why' /> */}
         <header className="AppHeader">
           <div className='AppHeader-Menu'>
             <div className='AppHeader-Menu_Logo'>
@@ -54,7 +54,7 @@ function App(props) {
             <Route path='/Authors' element={<Authors />} />
             <Route path='/Reg' element={<Reg setDataHide={setDataHide} />} />
             <Route path='/Log' element={<Log setDataHide={setDataHide} />} />
-            <Route path='/AboutThisRecept' element={<AboutThisRecept state={props.state.getState().ReceptsReducer}/>} />
+            <Route path='/AboutThisRecept/' element={<AboutThisRecept state={props.state.getState().ReceptsReducer}/>} />
           </Routes>
 
         </main>

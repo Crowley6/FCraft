@@ -5,57 +5,63 @@ import './AboutThisRecept.css';
 const AboutThisRecept = (props) => {
     debugger
     return (
-        <div>
+        <div className='AboutThisRecept'>
             <img src={ImageBackForHeader} alt="" />
-            <div className='AppMain-Recepts_IngredientsView_ObjectDataHeader'>
+            <div className='AppMain-Recepts_IngredientsView_ObjectDataHeader AboutThisRecept-Category'>
                 <p>{props.state.ReceptsData[0].kitchenKategory}</p>
                 <p>{props.state.ReceptsData[0].kitchenKategory2}</p>
                 <p>{props.state.ReceptsData[0].kitchenKategory3}</p>
             </div>
             <div className='AppMain-Recepts_IngredientsView_ObjectDataName'>{props.state.ReceptsData[0].name}</div>
-            <div className='AppMain-Recepts_IngredientsView_ObjectDataVendor'>Автор: {props.state.ReceptsData[0].author}</div>
-            <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGrade'>
-                <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeSubscribes'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
-                        <g clip-path="url(#clip0_718_731)">
-                            <path d="M15.3413 20.1442L8.34131 11.2192L1.34131 20.1442V2.5C1.34131 1.83696 1.55202 1.20107 1.9271 0.732233C2.30217 0.263392 2.81088 0 3.34131 0L13.3413 0C13.8717 0 14.3805 0.263392 14.7555 0.732233C15.1306 1.20107 15.3413 1.83696 15.3413 2.5V20.1442ZM8.34131 7.64833L13.3413 14.0225V2.5H3.34131V14.0225L8.34131 7.64833Z" fill="#8CACC5" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_718_731">
-                                <rect width="16" height="20" fill="white" transform="translate(0.341309)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <p>{props.state.ReceptsData[0].countSubscribes}</p>
+            <div className='AboutThisRecept-Vendor'>
+                <div className='AppMain-Recepts_IngredientsView_ObjectDataVendor AboutThisRecept-Vendor_FirstDiv'>Автор: {props.state.ReceptsData[0].author}</div>
+                <div className='AboutThisRecept-Vendor_SecondDiv'>
+                    <div>{props.state.ReceptsData[0].dataSet}</div>
+                    <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGrade'>
+                        <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeSubscribes'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
+                                <g clip-path="url(#clip0_718_731)">
+                                    <path d="M15.3413 20.1442L8.34131 11.2192L1.34131 20.1442V2.5C1.34131 1.83696 1.55202 1.20107 1.9271 0.732233C2.30217 0.263392 2.81088 0 3.34131 0L13.3413 0C13.8717 0 14.3805 0.263392 14.7555 0.732233C15.1306 1.20107 15.3413 1.83696 15.3413 2.5V20.1442ZM8.34131 7.64833L13.3413 14.0225V2.5H3.34131V14.0225L8.34131 7.64833Z" fill="#8CACC5" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_718_731">
+                                        <rect width="16" height="20" fill="white" transform="translate(0.341309)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>{props.state.ReceptsData[0].countSubscribes}</p>
+                        </div>
+                    </div>
+                    <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeLikes'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <g clip-path="url(#clip0_718_735)">
+                                <path d="M19.3188 6.43407C18.928 5.98375 18.4451 5.62264 17.9026 5.3752C17.3602 5.12777 16.7709 4.99978 16.1746 4.99991H12.8505L13.1305 3.29907C13.2295 2.70013 13.11 2.08552 12.7937 1.56736C12.4774 1.04919 11.9853 0.662002 11.4073 0.476401C10.8293 0.2908 10.2038 0.319158 9.64496 0.556304C9.0861 0.793449 8.63111 1.22358 8.36298 1.76824L6.76797 4.99991H4.50798C3.40331 5.00123 2.34427 5.44064 1.56316 6.22176C0.782044 7.00287 0.342632 8.06191 0.341309 9.16657L0.341309 13.3332C0.342632 14.4379 0.782044 15.4969 1.56316 16.2781C2.34427 17.0592 3.40331 17.4986 4.50798 17.4999H15.5913C16.5942 17.4958 17.5623 17.1318 18.3195 16.4742C19.0767 15.8166 19.5726 14.909 19.7171 13.9166L20.3046 9.74991C20.3874 9.15885 20.3422 8.55692 20.1721 7.98485C20.002 7.41278 19.711 6.88392 19.3188 6.43407ZM2.00798 13.3332V9.16657C2.00798 8.50353 2.27137 7.86765 2.74021 7.39881C3.20905 6.92997 3.84493 6.66657 4.50798 6.66657H6.17464V15.8332H4.50798C3.84493 15.8332 3.20905 15.5698 2.74021 15.101C2.27137 14.6322 2.00798 13.9963 2.00798 13.3332ZM18.6505 9.51574L18.0621 13.6824C17.9761 14.2774 17.6794 14.8218 17.226 15.2165C16.7725 15.6112 16.1925 15.83 15.5913 15.8332H7.84131V6.44491C7.91984 6.37649 7.98485 6.29395 8.03297 6.20157L9.85714 2.50574C9.92555 2.38235 10.0223 2.27695 10.1393 2.19821C10.2564 2.11947 10.3905 2.06963 10.5306 2.05279C10.6706 2.03595 10.8127 2.05259 10.9451 2.10135C11.0775 2.1501 11.1964 2.22958 11.2921 2.33324C11.374 2.42845 11.4339 2.54055 11.4674 2.66155C11.501 2.78255 11.5074 2.90946 11.4863 3.03324L11.0463 5.69991C11.027 5.81906 11.0338 5.94098 11.0662 6.05724C11.0987 6.17351 11.156 6.28133 11.2342 6.37327C11.3124 6.4652 11.4097 6.53904 11.5193 6.58968C11.6288 6.64032 11.7481 6.66656 11.8688 6.66657H16.1746C16.5325 6.66653 16.8862 6.7433 17.2118 6.8917C17.5374 7.04009 17.8273 7.25667 18.062 7.52677C18.2968 7.79687 18.4708 8.11422 18.5723 8.45735C18.6738 8.80049 18.7005 9.16141 18.6505 9.51574Z" fill="#8CACC5" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_718_735">
+                                    <rect width="20" height="20" fill="white" transform="translate(0.341309)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p>{props.state.ReceptsData[0].countLikes}</p>
+                    </div>
+                    <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeDisikes'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                            <g clip-path="url(#clip0_718_842)">
+                                <path d="M20.8005 10.25L20.213 6.08333C20.0686 5.09161 19.5732 4.18459 18.8169 3.52706C18.0606 2.86952 17.0935 2.5051 16.0913 2.5H5.00798C3.90331 2.50132 2.84427 2.94073 2.06316 3.72185C1.28204 4.50296 0.842632 5.562 0.841309 6.66667L0.841309 10.8333C0.842632 11.938 1.28204 12.997 2.06316 13.7782C2.84427 14.5593 3.90331 14.9987 5.00798 15H7.26798L8.86298 18.2317C9.13111 18.7763 9.5861 19.2065 10.145 19.4436C10.7038 19.6807 11.3293 19.7091 11.9073 19.5235C12.4853 19.3379 12.9774 18.9507 13.2937 18.4326C13.61 17.9144 13.7295 17.2998 13.6305 16.7008L13.3505 15H16.6746C17.2711 15 17.8607 14.872 18.4034 14.6245C18.9461 14.3771 19.4294 14.016 19.8205 13.5657C20.2117 13.1154 20.5016 12.5863 20.6707 12.0143C20.8397 11.4423 20.884 10.8406 20.8005 10.25ZM5.00798 4.16667H6.67464V13.3333H5.00798C4.34493 13.3333 3.70905 13.0699 3.24021 12.6011C2.77137 12.1323 2.50798 11.4964 2.50798 10.8333V6.66667C2.50798 6.00363 2.77137 5.36774 3.24021 4.8989C3.70905 4.43006 4.34493 4.16667 5.00798 4.16667ZM18.5613 12.4733C18.3267 12.7433 18.0368 12.9598 17.7113 13.1081C17.3859 13.2565 17.0323 13.3333 16.6746 13.3333H12.3688C12.2479 13.3333 12.1285 13.3596 12.0188 13.4103C11.9091 13.4611 11.8117 13.5351 11.7335 13.6272C11.6552 13.7193 11.598 13.8273 11.5657 13.9438C11.5333 14.0603 11.5267 14.1824 11.5463 14.3017L11.9863 16.9683C12.0074 17.0921 12.001 17.219 11.9674 17.34C11.9339 17.461 11.874 17.5731 11.7921 17.6683C11.6961 17.7718 11.5769 17.851 11.4444 17.8995C11.3118 17.9479 11.1696 17.9642 11.0295 17.9469C10.8894 17.9297 10.7554 17.8794 10.6385 17.8003C10.5216 17.7211 10.4252 17.6154 10.3571 17.4917L8.53298 13.7983C8.48485 13.706 8.41984 13.6234 8.34131 13.555V4.16667H16.0913C16.6932 4.16887 17.2743 4.38727 17.7286 4.78208C18.1829 5.17689 18.4802 5.7218 18.5663 6.3175L19.1546 10.4842C19.204 10.8389 19.1766 11.2001 19.0742 11.5432C18.9718 11.8864 18.7969 12.2036 18.5613 12.4733Z" fill="#8CACC5" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_718_842">
+                                    <rect width="20" height="20" fill="white" transform="translate(0.841309)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p>{props.state.ReceptsData[0].countDislikes}</p>
+                    </div>
                 </div>
-                <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeLikes'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                        <g clip-path="url(#clip0_718_735)">
-                            <path d="M19.3188 6.43407C18.928 5.98375 18.4451 5.62264 17.9026 5.3752C17.3602 5.12777 16.7709 4.99978 16.1746 4.99991H12.8505L13.1305 3.29907C13.2295 2.70013 13.11 2.08552 12.7937 1.56736C12.4774 1.04919 11.9853 0.662002 11.4073 0.476401C10.8293 0.2908 10.2038 0.319158 9.64496 0.556304C9.0861 0.793449 8.63111 1.22358 8.36298 1.76824L6.76797 4.99991H4.50798C3.40331 5.00123 2.34427 5.44064 1.56316 6.22176C0.782044 7.00287 0.342632 8.06191 0.341309 9.16657L0.341309 13.3332C0.342632 14.4379 0.782044 15.4969 1.56316 16.2781C2.34427 17.0592 3.40331 17.4986 4.50798 17.4999H15.5913C16.5942 17.4958 17.5623 17.1318 18.3195 16.4742C19.0767 15.8166 19.5726 14.909 19.7171 13.9166L20.3046 9.74991C20.3874 9.15885 20.3422 8.55692 20.1721 7.98485C20.002 7.41278 19.711 6.88392 19.3188 6.43407ZM2.00798 13.3332V9.16657C2.00798 8.50353 2.27137 7.86765 2.74021 7.39881C3.20905 6.92997 3.84493 6.66657 4.50798 6.66657H6.17464V15.8332H4.50798C3.84493 15.8332 3.20905 15.5698 2.74021 15.101C2.27137 14.6322 2.00798 13.9963 2.00798 13.3332ZM18.6505 9.51574L18.0621 13.6824C17.9761 14.2774 17.6794 14.8218 17.226 15.2165C16.7725 15.6112 16.1925 15.83 15.5913 15.8332H7.84131V6.44491C7.91984 6.37649 7.98485 6.29395 8.03297 6.20157L9.85714 2.50574C9.92555 2.38235 10.0223 2.27695 10.1393 2.19821C10.2564 2.11947 10.3905 2.06963 10.5306 2.05279C10.6706 2.03595 10.8127 2.05259 10.9451 2.10135C11.0775 2.1501 11.1964 2.22958 11.2921 2.33324C11.374 2.42845 11.4339 2.54055 11.4674 2.66155C11.501 2.78255 11.5074 2.90946 11.4863 3.03324L11.0463 5.69991C11.027 5.81906 11.0338 5.94098 11.0662 6.05724C11.0987 6.17351 11.156 6.28133 11.2342 6.37327C11.3124 6.4652 11.4097 6.53904 11.5193 6.58968C11.6288 6.64032 11.7481 6.66656 11.8688 6.66657H16.1746C16.5325 6.66653 16.8862 6.7433 17.2118 6.8917C17.5374 7.04009 17.8273 7.25667 18.062 7.52677C18.2968 7.79687 18.4708 8.11422 18.5723 8.45735C18.6738 8.80049 18.7005 9.16141 18.6505 9.51574Z" fill="#8CACC5" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_718_735">
-                                <rect width="20" height="20" fill="white" transform="translate(0.341309)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <p>{props.state.ReceptsData[0].countLikes}</p>
-                </div>
-                <div className='AppMain-Recepts_IngredientsView_ObjectDataGrade_CountGradeDisikes'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                        <g clip-path="url(#clip0_718_842)">
-                            <path d="M20.8005 10.25L20.213 6.08333C20.0686 5.09161 19.5732 4.18459 18.8169 3.52706C18.0606 2.86952 17.0935 2.5051 16.0913 2.5H5.00798C3.90331 2.50132 2.84427 2.94073 2.06316 3.72185C1.28204 4.50296 0.842632 5.562 0.841309 6.66667L0.841309 10.8333C0.842632 11.938 1.28204 12.997 2.06316 13.7782C2.84427 14.5593 3.90331 14.9987 5.00798 15H7.26798L8.86298 18.2317C9.13111 18.7763 9.5861 19.2065 10.145 19.4436C10.7038 19.6807 11.3293 19.7091 11.9073 19.5235C12.4853 19.3379 12.9774 18.9507 13.2937 18.4326C13.61 17.9144 13.7295 17.2998 13.6305 16.7008L13.3505 15H16.6746C17.2711 15 17.8607 14.872 18.4034 14.6245C18.9461 14.3771 19.4294 14.016 19.8205 13.5657C20.2117 13.1154 20.5016 12.5863 20.6707 12.0143C20.8397 11.4423 20.884 10.8406 20.8005 10.25ZM5.00798 4.16667H6.67464V13.3333H5.00798C4.34493 13.3333 3.70905 13.0699 3.24021 12.6011C2.77137 12.1323 2.50798 11.4964 2.50798 10.8333V6.66667C2.50798 6.00363 2.77137 5.36774 3.24021 4.8989C3.70905 4.43006 4.34493 4.16667 5.00798 4.16667ZM18.5613 12.4733C18.3267 12.7433 18.0368 12.9598 17.7113 13.1081C17.3859 13.2565 17.0323 13.3333 16.6746 13.3333H12.3688C12.2479 13.3333 12.1285 13.3596 12.0188 13.4103C11.9091 13.4611 11.8117 13.5351 11.7335 13.6272C11.6552 13.7193 11.598 13.8273 11.5657 13.9438C11.5333 14.0603 11.5267 14.1824 11.5463 14.3017L11.9863 16.9683C12.0074 17.0921 12.001 17.219 11.9674 17.34C11.9339 17.461 11.874 17.5731 11.7921 17.6683C11.6961 17.7718 11.5769 17.851 11.4444 17.8995C11.3118 17.9479 11.1696 17.9642 11.0295 17.9469C10.8894 17.9297 10.7554 17.8794 10.6385 17.8003C10.5216 17.7211 10.4252 17.6154 10.3571 17.4917L8.53298 13.7983C8.48485 13.706 8.41984 13.6234 8.34131 13.555V4.16667H16.0913C16.6932 4.16887 17.2743 4.38727 17.7286 4.78208C18.1829 5.17689 18.4802 5.7218 18.5663 6.3175L19.1546 10.4842C19.204 10.8389 19.1766 11.2001 19.0742 11.5432C18.9718 11.8864 18.7969 12.2036 18.5613 12.4733Z" fill="#8CACC5" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_718_842">
-                                <rect width="20" height="20" fill="white" transform="translate(0.841309)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <p>{props.state.ReceptsData[0].countDislikes}</p>
-                </div>
+
             </div>
-            <div className='AppMain-Recepts_IngredientsView_ObjectDataInfo'>
+            <div className='AppMain-Recepts_IngredientsView_ObjectDataInfo AboutThisRecept-DataInfo'>
                 <div className='AppMain-Recepts_IngredientsView_ObjectDataInfo_CountIngredients'>{props.state.ReceptsData[0].countIngredients} ингредиентов</div>
                 <div className='AppMain-Recepts_IngredientsView_ObjectDataInfo_CountPortions'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -85,60 +91,64 @@ const AboutThisRecept = (props) => {
                     <div>{props.state.ReceptsData[0].countTime}</div>
                 </div>
             </div>
-            <div>
-                <img src={props.state.ReceptsData[0].image} alt="" />
-                <div>
+            <div className='AbooutThisRecept-Ingredients'>
+                <img className='AboutThisRecept-IngredientsImage' src={props.state.ReceptsData[0].image} alt="" />
+                <div className='AboutThisRecept-IngredientsInfo'>
                     <h1>Ингредиенты</h1>
                     <div>
-                        <p>{props.state.ReceptsData[0].ingredientsName.milkName}</p>
-                        <p>{props.state.ReceptsData[0].ingredients.milk}</p>
-                    </div>
-                    <div>
-                        <p>{props.state.ReceptsData[0].ingredientsName.cocckEggsName}</p>
-                        <p>{props.state.ReceptsData[0].ingredients.cocckEggs}</p>
-                    </div>
-                    <div>
-                        <p>{props.state.ReceptsData[0].ingredientsName.wheatFlourName}</p>
-                        <p>{props.state.ReceptsData[0].ingredients.wheatFlour}</p>
-                    </div>
-                    <div>
-                        <p>{props.state.ReceptsData[0].ingredientsName.sugarName}</p>
-                        <p>{props.state.ReceptsData[0].ingredients.sugar}</p>
-                    </div>
-                    <div>
-                        <p>{props.state.ReceptsData[0].ingredientsName.bananaName}</p>
-                        <p>{props.state.ReceptsData[0].ingredients.banana}</p>
-                    </div>
-                    <div>
                         <div>
-                            <button>-</button>
-                            <h1></h1>
-                            <button>+</button>
+                            <p>{props.state.ReceptsData[0].ingredientsName.milkName}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.milk}</p>
                         </div>
-                        <p>порции</p>
+                        <div>
+                            <p>{props.state.ReceptsData[0].ingredientsName.cocckEggsName}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.cocckEggs}</p>
+                        </div>
+                        <div>
+                            <p>{props.state.ReceptsData[0].ingredientsName.wheatFlourName}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.wheatFlour}</p>
+                        </div>
+                        <div>
+                            <p>{props.state.ReceptsData[0].ingredientsName.sugarName}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.sugar}</p>
+                        </div>
+                        <div>
+                            <p>{props.state.ReceptsData[0].ingredientsName.bananaName}</p>
+                            <p>{props.state.ReceptsData[0].ingredients.banana}</p>
+                        </div>
+                    </div>
+
+                    <div className='AboutThisRecept-IngredientsInfo_Btns'>
+                        <button>-</button>
+                        <h1>1</h1>
+                        <button>+</button>
+                    </div>
+                    <p className='AboutThisRecept-IngredientsInfo_p'>порции</p>
+                </div>
+            </div>
+            <div className='AboutThisRecept-Compound'>
+                <h1>Энергетическая ценность на порцию</h1>
+                <div className='AboutThisRecept-Compound_Info'>
+                    <div>
+                        <p>Калорийность</p>
+                        <p>Данные с БД</p>
+                    </div>
+                    <div>
+                        <p>Белки</p>
+                        <p>Данные с БД</p>
+                    </div>
+                    <div>
+                        <p>Жиры</p>
+                        <p>Данные с БД</p>
+                    </div>
+                    <div>
+                        <p>Углеводы</p>
+                        <p>Данные с БД</p>
                     </div>
                 </div>
+
             </div>
-            <div>
-                <h1>Энергетическая ценность на порцию</h1>
-                <div>
-                    <p>Калорийность</p>
-                    <p>Данные с БД</p>
-                </div>
-                <div>
-                    <p>Белки</p>
-                    <p>Данные с БД</p>
-                </div>
-                <div>
-                    <p>Жиры</p>
-                    <p>Данные с БД</p>
-                </div>
-                <div>
-                    <p>Углеводы</p>
-                    <p>Данные с БД</p>
-                </div>
-            </div>
-            <div>
+            <div className='AboutThisRecept-Instruction'>
                 <h1>ИНСТРУКЦИЯ ПРИГОТОВЛЕНИЯ</h1>
                 <div>
                     <ol>
