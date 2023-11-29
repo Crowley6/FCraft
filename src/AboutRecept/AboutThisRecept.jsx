@@ -2,9 +2,34 @@ import { useEffect, useState } from 'react';
 import ImageBackForHeader from '../AppPictures/ImageBackForHeader.png';
 import './AboutThisRecept.css';
 
+const NewComment = () => {
+    return (
+        <div className='AboutThisRecept-CommentShow_ThisCommentData'>
+            <div className='AboutThisRecept-CommentShow_ThisCommentData_Man'>
+                <img src="" alt="Ава" />
+                <div className='AboutThisRecept-CommentShow_ThisCommentData_ManName'>name</div>
+                <div className='AboutThisRecept-CommentShow_ThisCommentData_VerticalLine'>
+                </div>
+                <div className='AboutThisRecept-CommentShow_ThisCommentData_DataPublication'>dataPublication</div>
+            </div>
+            <div className='AboutThisRecept-CommentShow_ThisCommentDataResult'>ThisComment</div>
+            <div className='AboutThisRecept-CommentShow_ThisCommentData_HorizontalLine'>
+            </div>
+            <div className='AboutThisRecept-CommentShow_ThisCommentData_Buttons'>
+                <div className='AboutThisRecept-CommentShow_ThisCommentData_Buttons1'>
+                    <div>Ответить</div>
+                    <div>Пожаловаться</div>
+                </div>
+                <div className='AboutThisRecept-CommentShow_ThisCommentData_Buttons2'>
+                    <div>like {'count'}</div>
+                    <div>dislike {'count'}</div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const AboutThisRecept = (props) => {
-    debugger
     const [countPortion, setCountPortion] = useState(1);
     return (
         <div className='AboutThisRecept'>
@@ -156,6 +181,25 @@ const AboutThisRecept = (props) => {
                     <ol>
                         {props.state.ReceptsData[0].instructions.map(data => <li>{data}</li>)}
                     </ol>
+                </div>
+            </div>
+            <div className='AboutThisRecept-Comment'>
+                <div>
+                    <h1>Оставьте комментарий</h1>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1536" height="7" viewBox="0 0 1536 7" fill="none">
+                            <path d="M0.333333 3.5C0.333333 4.97276 1.52724 6.16667 3 6.16667C4.47276 6.16667 5.66667 4.97276 5.66667 3.5C5.66667 2.02724 4.47276 0.833333 3 0.833333C1.52724 0.833333 0.333333 2.02724 0.333333 3.5ZM1530.33 3.49987C1530.33 4.97263 1531.53 6.16653 1533 6.16653C1534.47 6.16653 1535.67 4.97263 1535.67 3.49987C1535.67 2.02711 1534.47 0.833199 1533 0.833199C1531.53 0.8332 1530.33 2.02711 1530.33 3.49987ZM3 4L1533 3.99987L1533 2.99987L3 3L3 4Z" fill="#183851" />
+                        </svg>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" className='AboutThisRecept-CommentTextarea' placeholder='Добавить комментарий'></textarea>
+                    <button className='AboutThisRecept-CommentButton' onClick={() => false}>Отправить</button>
+                </div>
+                <div className='AboutThisRecept-CommentShow'>
+                    <h1>count комментария</h1>
+                    <div className='AboutThisRecept-CommentShow_ThisComment'>
+                        <NewComment />
+                        <NewComment />
+                    </div>
                 </div>
             </div>
         </div>
