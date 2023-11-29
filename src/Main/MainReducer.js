@@ -19,6 +19,8 @@ let inintialState = {
         { image: breakfast, name: 'Блюдо из БД', description: 'Описание' },
         { image: breakfast, name: 'Блюдо из ЧБД', description: 'Описание' },
         { image: breakfast, name: 'Блюдо из БД', description: 'Описание' },
+        { image: breakfast, name: 'Блюдо из БД', description: 'Описание' },
+        { image: breakfast, name: 'Блюдо из БД', description: 'Описание' },
     ],
 }
 

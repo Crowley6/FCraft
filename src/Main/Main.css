@@ -1,28 +1,37 @@
 .AppMain {}
 
-.AppMainData-Container {
-    height: 3850px;
-}
 
 .AppMainData {
     top: 0;
     z-index: -1;
     width: 1920px;
-    position: absolute;
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 .AppMainData-Svg {
     display: flex;
-    width: 100%;
-    position: absolute;
-    top: -95px;
-    overflow: hidden;
+    width: 1920px;
+    min-width: 1920px;
+    position: relative;
+    height: 1295px;
 }
 
-.AppMainData-Svg:first-child {}
+.AppMainData_Svgs {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.AppMainData_Svgs :last-child {
+    margin: 0 0 0 -350px;
+}
+
+.AppMainData_Sources {
+    position: absolute;
+}
 
 .AppMainData_Images {
     position: absolute;
@@ -178,8 +187,7 @@
     gap: 65px;
     flex-shrink: 0;
     flex-wrap: nowrap;
-    position: absolute;
-    top: 1270px;
+    height: 400px;
 }
 
 .AppMainData_Menu div {
@@ -209,13 +217,10 @@
 
 
 .AppMainData_Popular {
-    position: absolute;
-    top: 1770px;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 1920px;
-    height: 155px;
 }
 
 .AppMainData_Popular_Header {
@@ -234,6 +239,10 @@
     line-height: normal;
 }
 
+.AppMainData_Popular_Main {
+    width: 1630px;
+}
+
 .AppMainData_Popular_Main>h1 {
     color: #8CACC5;
     font-family: Alegreya;
@@ -248,11 +257,23 @@
     display: flex;
     width: 1630px;
     justify-content: space-between;
-    margin: 280px 0 0 0;
+    margin: 80px 0 0 0;
+    padding: 0 0 5px 0;
+    gap: 30px;
+    overflow-x: auto;
+}
+.AppMainData_Popular_MainData::-webkit-scrollbar {
+    height: 2px;
+    background-color: rgb(0,0,0,0);
+}
+.AppMainData_Popular_MainData::-webkit-scrollbar-thumb {
+    background-color: rgba(114, 114, 114, 0.75);
 }
 
-.AppMainData_Popular_MainDataContainerOut {
+.AppMainData_Popular_MainDataContainerIn {
     position: relative;
+    height: 550px;
+    margin: 200px 0 0 0;
 }
 
 .AppMainData_Popular_MainDataContainer {
@@ -269,6 +290,8 @@
     width: 400px;
     height: 400px;
     margin: -200px 0 0 0;
+    border-radius: 50%;
+    border: 6px solid #8CACC5;
 }
 
 .AppMainData_Popular_MainDataContainer>p {
@@ -290,13 +313,11 @@
 
 
 .AppMainData_Review {
-    position: relative;
-    top: 2900px;
+    margin: 100px 0 0 0;
     padding: 0 145px;
 }
 
 .AppMainData_ReviewOutContainer {
-    position: absolute;
     width: 1630px;
 }
 

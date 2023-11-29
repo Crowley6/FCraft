@@ -18,7 +18,9 @@
 }
 
 .AppHeader {
+    display: block;
     position: absolute;
+    z-index: 99;
 }
 
 .AppHeader-Menu {
@@ -129,7 +131,7 @@
 }
 
 .AppMain {
-    min-height: 200px;
+    display: block;
 }
 
 footer {

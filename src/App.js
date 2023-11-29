@@ -47,7 +47,6 @@ function App(props) {
             </div>
           </div>
         </header>
-        <main className='AppMain' >
           <Routes>
             <Route path='/' element={<Main state={props.state.getState()} />} />
             <Route path='/Recepts' element={<Recepts state={props.state.getState().ReceptsReducer} />} />
@@ -57,7 +56,6 @@ function App(props) {
             <Route path='/AboutThisRecept/' element={<AboutThisRecept state={props.state.getState().ReceptsReducer}/>} />
           </Routes>
 
-        </main>
         {
           dataHide ?
             <footer className='AppFooter'>
