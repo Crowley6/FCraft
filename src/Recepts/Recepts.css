@@ -280,11 +280,8 @@ select {
     align-items: center;
     gap: 120px;
 }
-
-.AppMain-Recepts_IngredientsView_Object>img {
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
+.AppMain-Recepts_IngredientsView_ObjectImg{
+    max-height: 500px;
 }
 
 .AppMain-Recepts_IngredientsView_ObjectData {

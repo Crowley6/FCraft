@@ -7,7 +7,7 @@ const ReceptsIngredient = (props) => {
     return (
         <div className='AppMain-Recepts_IngredientsView_Object'>
             <a href="/AboutThisRecept">
-                <img src={props.image} alt="" />
+                <img src={props.image} alt="" className='AppMain-Recepts_IngredientsView_ObjectImg' />
             </a>
             <div className='AppMain-Recepts_IngredientsView_ObjectData'>
                 <a href="/AboutThisRecept">
